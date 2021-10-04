@@ -1,0 +1,28 @@
+.header{
+    background-color: #f9c62f00;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 111111;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 400;
+    .header__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;  
+    }
+    .header__item{
+        padding: 20px;
+        font-size: 18px;
+        line-height: 21px;
+
+    }
+    .header__link{
+        text-decoration: none;
+        color: #000;
+    }
+
+}
