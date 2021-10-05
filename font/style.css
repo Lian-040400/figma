@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'ierc';
+  src:
+    url('fonts/ierc.ttf?om2pi0') format('truetype'),
+    url('fonts/ierc.woff?om2pi0') format('woff'),
+    url('fonts/ierc.svg?om2pi0#ierc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ierc' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-RU .path1:before {
+  content: "\e935";
+  color: rgb(240, 240, 240);
+}
+.i-RU .path2:before {
+  content: "\e936";
+  margin-left: -0.9755859375em;
+  color: rgb(0, 82, 180);
+}
+.i-RU .path3:before {
+  content: "\e937";
+  margin-left: -0.9755859375em;
+  color: rgb(216, 0, 39);
+}
+.i-arrow-right:before {
+  content: "\e938";
+}
+.i-US .path1:before {
+  content: "\e900";
+  color: rgb(196, 33, 38);
+}
+.i-US .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path5:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path6:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path7:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(231, 231, 231);
+}
+.i-US .path8:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path9:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(231, 231, 231);
+}
+.i-US .path10:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path11:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(231, 231, 231);
+}
+.i-US .path12:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path13:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(231, 231, 231);
+}
+.i-US .path14:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path15:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(231, 231, 231);
+}
+.i-US .path16:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path17:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path18:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(220, 48, 39);
+}
+.i-US .path19:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(196, 33, 38);
+}
+.i-US .path20:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(243, 244, 245);
+}
+.i-US .path21:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path22:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(243, 244, 245);
+}
+.i-US .path23:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path24:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(243, 244, 245);
+}
+.i-US .path25:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path26:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(243, 244, 245);
+}
+.i-US .path27:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path28:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(243, 244, 245);
+}
+.i-US .path29:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path30:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(231, 54, 37);
+}
+.i-US .path31:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(40, 57, 145);
+}
+.i-US .path32:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path33:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path34:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path35:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path36:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path37:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path38:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path39:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path40:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path41:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path42:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path43:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path44:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path45:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path46:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path47:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path48:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path49:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path50:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path51:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path52:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
+.i-US .path53:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(239, 239, 239);
+}
