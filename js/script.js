@@ -1,77 +1,81 @@
-const carousel = document.querySelector('.carousel');
-const carouselLeftButton = document.querySelector('.left');
-const carouselRightButton = document.querySelector('.right');
 const carouselContentItem = document.querySelector('.partners__cards__item');
 const carouselDots = document.querySelector('.dots');
-const carouselDotsItem =document.createElement('div');
-carouselDotsItem.className = "dot";
-const stepToMove = 6;
+const stepToMove = 3;
 const carouselItemCount = 12;
-const noOfcarouselDots = carouselItemCount/stepToMove;
 let carouselLeftValue = 8;//carouselContent position left = 0.5rem = 8px
-let k=carouselDots.childNodes;
-
-console.log(k);
 const carouselContent = document.querySelector('.partners__cards');
-for (let i = 0; i < carouselItemCount-1; i++) {
-    const itemClone = carouselContentItem.cloneNode(true);
-    carouselContent.appendChild(itemClone); 
-}
+
+makeCarouselItems();
 
 let totalWidth = carouselContent.getBoundingClientRect().width;
-console.log('totalWidth0',totalWidth);
-let elementWidth = 180 + 16;
+let elementWidth = carouselContentItem.getBoundingClientRect().width + 80.8;// 5.05rem=80.8px margin-right of carouselContentItem
 let widthToMove = elementWidth * stepToMove;
 let noOFSlides = ((totalWidth / widthToMove)).toFixed(0);
-console.log('noOFSlides1',noOFSlides);
 let currentSlide = 1;
-console.log('noOFSlides',noOFSlides);
 
+slider();
 
-for (let i = 0; i < noOfcarouselDots; i++) {
-    const dot = carouselDotsItem.cloneNode(true);
-    carouselDots.appendChild(dot); 
+function slider() {
+    const carouselLeftButton = document.querySelector('.left');
+    const carouselRightButton = document.querySelector('.right');
+    carouselLeftButton.addEventListener('click', moveCarouselLeft);
+    carouselRightButton.addEventListener('click', moveCarouselRight);
+    makeCarouselDot();
 }
+function makeCarouselItems() {
+    for (let i = 0; i < carouselItemCount - 1; i++) {
+        const itemClone = carouselContentItem.cloneNode(true);
+        carouselContent.appendChild(itemClone);
+    }
+}
+function makeCarouselDot() {
+    const carouselDotsItem = document.createElement('div');
+    carouselDotsItem.className = "dot";
+    const noOfCarouselDots = carouselItemCount / stepToMove;
 
-function muveCarouselLeft() {
+    for (let i = 0; i < noOfCarouselDots; i++) {
+        const dot = carouselDotsItem.cloneNode(true);
+        if (i === 0) {
+            dot.classList.add('active');
+        }
+
+        carouselDots.appendChild(dot);
+    }
+}
+function moveCarouselLeft() {
     if (currentSlide === 1) {
         return;
     }
-    if (currentSlide ===noOFSlides ) {
+    if (currentSlide === noOFSlides) {
         carouselLeftValue = 8;
     } else {
         carouselLeftValue += widthToMove;
     }
     currentSlide--;
-    for (let i = 1; i < k.length; i++) {
-        if(i===currentSlide){
-            k[i].classList.add('active');
-        }
-        else{
-            k[i].classList.remove('active');
-        }
-        
-    }
+
+    addOrRemoveActiveClass(currentSlide)
     carouselContent.style.left = `${carouselLeftValue}px`;
 }
-
-function muveCarouselRight() {
-    console.log(noOFSlides);
-    if (currentSlide >=(noOFSlides)) {
+function moveCarouselRight() {
+    if (currentSlide >= (noOFSlides)) {
         return;
     }
     carouselLeftValue -= widthToMove;
     currentSlide++;
-    for (let i = 1; i < k.length; i++) {
-        if(i===currentSlide){
-            k[i].classList.add('active');
-        }
-        else{
-            k[i].classList.remove('active');
-        }
-        
-    }
+    addOrRemoveActiveClass(currentSlide);
     carouselContent.style.left = `${carouselLeftValue}px`
 }
-carouselLeftButton.addEventListener('click', muveCarouselLeft);
-carouselRightButton.addEventListener('click', muveCarouselRight);
+function addOrRemoveActiveClass(currentSlide) {
+    let coarouselDotArray = carouselDots.children;
+    console.log(coarouselDotArray);
+    for (let i = 0; i < coarouselDotArray.length; i++) {
+        if (i + 1 === currentSlide) {
+            coarouselDotArray[i].classList.add('active');
+        }
+        else {
+            coarouselDotArray[i].classList.remove('active');
+        }
+    }
+}
+
+      
