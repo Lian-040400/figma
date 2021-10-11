@@ -1,0 +1,104 @@
+.footer-container {
+    background-color: #3c3032;
+    padding-top: 72px;
+    color: rgba(255, 255, 255, 0.5);
+    .contacts {
+        h3 {
+            font-style: normal;
+            font-weight: 900;
+            font-size: 35px;
+            line-height: 41px;
+            color: #ffffff;
+            padding-bottom: 10px;
+        }
+       
+       
+
+        display: flex;
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-between;
+
+            &__item {
+                padding-right: 60px;
+                 margin-bottom: 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                a {
+                    color: rgba(255, 255, 255, 0.5);
+                    text-decoration: none;
+                    font-size: 18px;
+                    // margin-top: 10px;
+                }
+            }
+        }
+        .addres {
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            p {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 32px;
+                letter-spacing: 0.01em;
+                margin-bottom: 20px;
+            }
+            // justify-content: space-between;
+            // p{
+            //     margin-top: 10px;
+            //     margin-bottom: 10px;
+            // }
+            .follow__us {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+               
+                margin-bottom: 10px;
+                /* identical to box height */
+                margin-bottom: 20px;
+
+                color: #ffffff;
+            }
+            .social-media{
+                margin-bottom: 20px;
+            }
+            img {
+                margin-right: 10px;
+            }
+            .email-field{
+                padding:8px 0px 8px 20px ;
+
+                border-radius: 35px;
+                background-color: #DADADA;
+                color: black;
+                font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 29px;
+            }
+        }
+    }
+    .footer {
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+
+        text-align: center;
+        letter-spacing: 0.01em;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+        p {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}

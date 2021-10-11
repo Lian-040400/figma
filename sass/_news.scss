@@ -1,4 +1,24 @@
 .news{
+    .news__item__container{
+        display: grid;
+        grid-gap: 0px 10px ;
+        grid-template-columns: repeat(3, 1fr);
+        .news__item{
+//             position: absolute;
+// width: 400px;
+// height: 629px;
+// left: 1200px;
+// top: 242px;
+
+// background: #FFFFFF;
+/* Shadow */
+box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+border-radius: 35px;
+img{
+    width: 100%;
+}
+    }
+    }
     h2 {
         color: #e35205;
         font-style: normal;
@@ -6,6 +26,6 @@
         font-size: 60px;
         line-height: 70px;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 }

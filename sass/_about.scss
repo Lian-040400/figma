@@ -1,3 +1,4 @@
+@import './mixin';
 .about {
     h2 {
         color: #e35205;
@@ -6,7 +7,8 @@
         font-size: 60px;
         line-height: 70px;
         text-align: center;
-        padding-top: 30px;
+     padding-top: 100px;
+
     }
     p {
         font-style: normal;
@@ -26,16 +28,7 @@
         justify-content: space-between;
         overflow: hidden;
         h3 {
-            position: absolute;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 29px;
-            text-align: center;
-            letter-spacing: 0.6em;
-            color: #e35205;
-            padding-top: 30px;
-            padding-bottom: 0px;
+            @include partners__header;
         }
         .arrow__buttons {
             display: flex;
@@ -84,20 +77,29 @@
                 transform: translateY(-50%);
                 transition: all 0.5s ease-out;
                 &__item {
-                    filter: grayscale(60%);
-                    box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
-                    border-radius: 35px;
-                    width: 146px;
-                    filter: grayscale(60%);
-                    box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
-                    padding: 0.2rem;
-                    margin-right: 5.05rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                  @include partners__cards__item;
                 }
             }
         }
     }
 }
+.about__page__partners{
+    display: flex;
+    justify-content: space-between;
+flex-direction: column;
+align-items: center;
+margin-bottom: 80px;
+    h3{
+        @include partners__header;
+    }
+.about__page__partners__cards{
+    
+    display: grid;
+  grid-gap:4rem 0px;
+  grid-template-columns: repeat(6, 1fr);
+    .partners__cards__item{
+       
+        @include partners__cards__item;
+    }
+}}
 

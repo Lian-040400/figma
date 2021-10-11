@@ -1,14 +1,16 @@
 .header{
     background-color: #f9c62f00;
     height: 10vh;
-  width: 100%;
+width: 100%;
+background-color: rgb(238, 28, 28);
     position: fixed;
     z-index: 1111;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    line-height: 400;
+    
     .header__list{
+        background-color: #fff;
         display: flex;
         justify-content: space-between;
         align-items: center;

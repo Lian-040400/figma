@@ -1,0 +1,25 @@
+@mixin partners__cards__item {
+    filter: grayscale(60%);
+    box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 35px;
+    width: 146px;
+    filter: grayscale(60%);
+    box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+    padding: 0.2rem;
+    margin-right: 5.05rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin partners__header {
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.6em;
+    color: #e35205;
+    padding-bottom: 0px;
+    margin: 60px 0px;
+}
