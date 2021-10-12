@@ -1,23 +1,15 @@
-.news{
-    .news__item__container{
+.news {
+    .news__item__container {
         display: grid;
-        grid-gap: 0px 10px ;
+        grid-gap: 0px 10px;
         grid-template-columns: repeat(3, 1fr);
-        .news__item{
-//             position: absolute;
-// width: 400px;
-// height: 629px;
-// left: 1200px;
-// top: 242px;
-
-// background: #FFFFFF;
-/* Shadow */
-box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
-border-radius: 35px;
-img{
-    width: 100%;
-}
-    }
+        .news__item {
+            box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 35px;
+            img {
+                width: 100%;
+            }
+        }
     }
     h2 {
         color: #e35205;
@@ -29,3 +21,90 @@ img{
         padding-top: 40px;
     }
 }
+
+
+.news__page__header{
+    padding-top: 80px;
+    h2{
+        color: #A0072B;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        padding-top: 40px;
+    }
+    p {
+        color: #5e8ab4;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+}
+.news__page__item__container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px ;
+    margin-bottom: 200px;
+ h4{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #A0072B;
+ }
+ p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0px 5px;
+    text-align: justify;
+    letter-spacing: 0.01em;
+   
+    color: #555555;
+ }
+}
+.news__page__item{
+
+background: #FFFFFF;
+box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+border-radius: 35px;
+
+.item__img{
+    width: 100%;
+}
+}
+
+@media (max-width:1000px) {
+    .news__page__item__container{
+        grid-template-columns: repeat(2, 1fr);
+    
+    }}   
+@media (max-width:580px) {
+        .news__page__item__container{
+            grid-template-columns: repeat(1, 1fr);
+        }   
+        .news__page__header{
+           
+            h2{
+                
+                font-size: 35px;
+                
+            }
+            p {
+              
+                font-size: 20px;
+               
+            }
+        }  
+        .news__page__item__container{
+
+          
+         h4{
+            
+            font-size: 25px;
+           
+         }}
+    }

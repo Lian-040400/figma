@@ -78,6 +78,7 @@
                 transition: all 0.5s ease-out;
                 &__item {
                   @include partners__cards__item;
+                
                 }
             }
         }
@@ -95,11 +96,48 @@ margin-bottom: 80px;
 .about__page__partners__cards{
     
     display: grid;
-  grid-gap:4rem 0px;
+  grid-gap:5rem ;
   grid-template-columns: repeat(6, 1fr);
     .partners__cards__item{
-       
-        @include partners__cards__item;
+       width: 146px;
+        filter: grayscale(60%);
+        box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 35px;
+        filter: grayscale(60%);
+        box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
     }
 }}
 
+
+@media (max-width: 1300px) {
+    .about__page__partners__cards {
+        grid-template-columns: repeat(4, 1fr) !important;
+      
+    }
+    
+}
+@media (max-width: 870px) {
+    .about__page__partners__cards {
+        grid-template-columns: repeat(3, 1fr) !important;
+      
+    }
+}
+
+@media (max-width: 660px) {
+    .about__page__partners__cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+      
+    }
+
+}
+@media (max-width: 460px) {
+    .about__page__partners__cards {
+        gap:20px !important ;
+      
+    }
+}
