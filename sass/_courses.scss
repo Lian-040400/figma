@@ -1,4 +1,5 @@
 .courses {
+    margin-bottom: 90px;
     &__header {
         h2 {
             color: #e35205;
@@ -7,7 +8,7 @@
             font-size: 60px;
             line-height: 70px;
             text-align: center;
-          padding-top: 40px;
+           padding-top: 100px;
         }
         p {
             color: #5e8ab4;
@@ -41,6 +42,9 @@
             }
         }
     }
+}
+.courses__page__color{
+color: #A0072B !important;
 }
 @media (max-width: 600px) {
     .laboratores__container {

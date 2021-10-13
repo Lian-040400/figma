@@ -1,0 +1,61 @@
+.laboratory_container {
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .laboratory {
+                box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 35px;
+                padding: 10px;
+                margin-bottom: 350px;
+
+                h2 {
+                        color: #a0072b;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 60px;
+                        line-height: 70px;
+                       
+                }
+                p {
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 32px;
+                        padding: 0px 5px;
+                        text-align: justify;
+                        letter-spacing: 0.01em;
+                        color: #555555;
+                }
+                h4 {
+                        font-weight: 900;
+                        font-size: 30px;
+                        line-height: 24px;
+                        color: #a0072b;
+                        margin-top: 40px;
+                }
+                .conditions__item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        img{
+                                
+                               width: 400px;
+                               height: 400px;
+                        }
+                        .property {
+                                color: #000;
+                        }
+                }
+                .teachers {
+                        &__item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between  ;
+                                h5{
+                                        margin-bottom: 20px
+                                }                            ;
+                        }
+                }
+        }
+}
