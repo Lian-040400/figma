@@ -12,30 +12,22 @@
             color: #ffffff;
             padding-bottom: 10px;
         }
-       
-    
-    
 
         .links {
             display: flex;
             flex-direction: column;
-            // align-items: center;
-            // justify-content: space-between;
-
             &__item {
-                // padding-right: 60px;
-                 margin-bottom: 20px;
+                margin-bottom: 20px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                 a {
                     color: rgba(255, 255, 255, 0.5);
                     text-decoration: none;
                     font-size: 18px;
-                    // margin-top: 10px;
                 }
             }
         }
         .addres {
-             margin-right: 100px;
+            margin-right: 100px;
             display: flex;
             flex-direction: column;
             p {
@@ -46,40 +38,29 @@
                 letter-spacing: 0.01em;
                 margin-bottom: 20px;
             }
-            // justify-content: space-between;
-            // p{
-            //     margin-top: 10px;
-            //     margin-bottom: 10px;
-            // }
             .follow__us {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 22px;
                 line-height: 27px;
-               
-              
-             
                 margin-bottom: 20px;
-
                 color: #ffffff;
             }
-            .social-media{
+            .social-media {
                 margin-bottom: 20px;
             }
             img {
                 margin-right: 10px;
             }
-            .email-field{
-                padding:8px 0px 8px 20px ;
-
+            .email-field {
+                padding: 8px 0px 8px 20px;
                 border-radius: 35px;
-                background-color: #DADADA;
+                background-color: #dadada;
                 color: black;
                 font-style: normal;
-               
-font-weight: normal;
-font-size: 22px;
-line-height: 29px;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 29px;
             }
         }
     }
@@ -91,11 +72,9 @@ line-height: 29px;
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
-
         text-align: center;
         letter-spacing: 0.01em;
         border-top: 1px solid rgba(255, 255, 255, 0.5);
-
         p {
             margin-bottom: 10px;
             margin-top: 10px;
@@ -106,28 +85,21 @@ line-height: 29px;
 
 @media (max-width: 660px) {
     .contacts {
-       flex-direction: column;
-       
-       h3 {
-       
-        
-        font-size: 30px!important;
-        
-       
-    }
-   
-    .email-field{
-        margin-bottom: 50px;
-    }
-    .follow__us {
-        
-        font-size: 16px !important; 
-    }
-    .email-field{
-        padding:3px 0px 3px 10px!important ;} 
+        flex-direction: column;
+        h3 {
+            font-size: 30px !important;
+        }
+        .email-field {
+            margin-bottom: 50px;
+        }
+        .follow__us {
+            font-size: 16px !important;
+        }
+        .email-field {
+            padding: 3px 0px 3px 10px !important ;
+        }
     }
     img {
         margin-right: 0.1px !important ;
     }
-    
 }

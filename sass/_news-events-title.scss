@@ -36,27 +36,27 @@
             width: 100%;
         }
     }
-  
+
     .part2 {
         margin-top: 80px;
-        height:800px;
+        height: 800px;
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
-          overflow: hidden;
-         p {
-                    font-weight: 300;
-                    font-size: 18px;
-                    line-height: 32px;
-                    padding: 0px 5px;
-                    text-align: justify;
-                    letter-spacing: 0.01em;
+        overflow: hidden;
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+            padding: 0px 5px;
+            text-align: justify;
+            letter-spacing: 0.01em;
 
-                    color: #555555;
-                }
-        
+            color: #555555;
+        }
+
         .news__carousel {
             width: 100%;
             position: relative;
@@ -82,7 +82,7 @@
                     line-height: 35px;
                     color: #a0072b;
                     margin-right: 25px;
-                    .carousel__item_img{
+                    .carousel__item_img {
                         width: 400px;
                     }
                 }
@@ -99,11 +99,12 @@
             }
         }
 
-        .news__carousel__arrow__buttons{
+        .news__carousel__arrow__buttons {
             display: flex;
             margin-bottom: 40px;
             margin-top: 40px;
-            .news__carousel__left,.news__carousel__right{
+            .news__carousel__left,
+            .news__carousel__right {
                 width: 50px;
                 height: 50px;
                 box-shadow: 15px 15px 35px 5px rgba(0, 0, 0, 0.15);
@@ -112,7 +113,7 @@
                 align-items: center;
                 justify-content: center;
             }
-            .news__carousel__dots{
+            .news__carousel__dots {
                 display: flex;
                 align-items: center;
                 .news__carousel__dot {
@@ -133,13 +134,11 @@
 }
 .icons {
     margin-top: 70px;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     &__header {
-
         p {
             margin-right: 20px;
             font-style: normal;

@@ -1,36 +1,88 @@
-.header{
+.header {
     background-color: #f9c62f;
     height: 10vh;
     width: 100%;
     position: fixed;
-    z-index: 1111;
+    z-index: 10;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .header__list{
+    .close__manu {
+        display: none;
+    }
+    .open__manu {
+        display: none;
+    }
+
+    .header__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;  
+        list-style: none;
     }
-    .header__item{
+    .header__item {
         padding: 20px;
         font-size: 18px;
         line-height: 21px;
     }
-    .header__link{
+    .header__link {
         text-decoration: none;
         color: #000;
-    }}
-.other__page__header{
+    }
+}
+.other__page__header {
     background-color: #fff;
-    
+}
+.show {
+    display: flex !important;
+    top: 0 !important;
 }
 
 @media (max-width: 850px) {
-    .header__menu, .header__list {
-   
-        display: none !important;
+    .header__manu {
+        display: none; ///////
+        height: 100vh;
+        color: whitesmoke;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 20;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        transition: top 1s ease;
+
+        &.show {
+            top: 0;
+            display: block; ///////
+        }
     }
-    
+
+    .header__list {
+        display: none; ///////
+
+        &.show-header-tabs {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                color: white !important;
+                font-size: 30px;
+            }
+        }
+    }
+
+    .close__manu {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .open__manu {
+        display: block !important;
+    }
 }

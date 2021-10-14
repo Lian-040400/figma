@@ -5,48 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <div class="header">
-       
-        <img src="./img/IERC_logo 1.png" alt="">
-        <class class="header__menu"></class>
-            <div class="header__manu">
-                <ul class="header__list">
-                    <li class="header__item">
-                        <a class="header__link" href="./html/about.html">About us</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="./html/news-events.html">News</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="./html/courses-page.html">Courses</a>
-                    </li>
-                    <li class="header__item">
-                        <a class="header__link" href="./html/contact-us-page.html">Contacts</a>
-                    </li>
-                    <li class="header__item">
-                        <img src="../img/AM.svg" alt="" srcset="">
-                      </li>
-                      <li class="header__item">
-                          <img src="../img/RU.svg" alt="" srcset="">
-                      </li>
-                      <li class="header__item">
-                         <img src="../img/US.svg" alt="" srcset="">
-                      </li>
-                </ul>
-            </div>
-
+        <a href="#"> <img src="../img/IERC_logo 1.png" alt=""></a>
+        <div class="open__manu">
+            <i class="material-icons">menu</i>
         </div>
+        <div class="header__manu">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="./html/about.html">About us</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./html/news-events.html">News</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./html/courses-page.html">Courses</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="./html/contact-us-page.html">Contacts</a>
+                </li>
+                <li class="header__item">
+                    <img src="../img/AM.svg" alt="" srcset="">
+                    <img src="../img/US.svg" alt="" srcset="">
+                    <img src="../img/RU.svg" alt="" srcset="">
+                </li>
+                <div class="close__manu">
+                    <i class="material-icons">close</i>
+                </div>
+            </ul>
+        </div>
+    </div>
 
     </div>
     <div class="first-page">
         <img src="./img/ket-text 1 (1).svg" alt="">
     </div>
-
     <div class="container">
         <div class="about">
             <h2>About</h2>
@@ -72,13 +73,16 @@
                 </div>
                 <div class="arrow__buttons">
                     <div class="left">
-                        < </div>
-                            <div class="dots"></div>
-                            <div class="right">></div>
+                        <i class="material-icons">chevron_left</i>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="right">
+                        <i class="material-icons">chevron_right</i>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="container">
         <div class="courses">
@@ -88,17 +92,16 @@
             </div>
             <div class="laboratores__container">
                 <div class="laboratores__item">
-                    <span>ENGINEERING LABORATORY</span>
+                    <a href="./html/enginering-laboratory.html">ENGINEERING LABORATORY</a>
                 </div>
                 <div class="laboratores__item">
-                    <span>PROGRAMMING LABORATORY </span>
+                    <a href="./html/enginering-laboratory.html">PROGRAMMING LABORATORY </a>
                 </div>
                 <div class="laboratores__item">
-                    <span>CHESS LABORATORY</span>
+                    <a href="./html/enginering-laboratory.html">CHESS LABORATORY</a>
                 </div>
                 <div class="laboratores__item">
-                    <span>MEDIA LABORATORY</span>
-
+                    <a href="./html/enginering-laboratory.html">MEDIA LABORATORY</a>
                 </div>
             </div>
         </div>
@@ -110,22 +113,31 @@
                 <div class="news__item">
                     <img src="./img/news/Image1.1or2.1.png" alt="">
                     <a href="./html/news-events-title.html">News Title</a>
-                    <h4>News Title</h4>
-                    <p>News</p>
-                    <p>14.05.2020</p>
+                    <p class="special-color">
+                        <span class="material-icons-outlined">
+                            schedule
+                        </span>
+                        <span>News</span>
+                    </p>
+                    <p class="special-color">14.05.2020</p>
                     <p>Praesent quis viverra ligula, vel convallis
                         massa. Mauris eget mi sed nulla laoreet
                         sollicitudin vitae et lacus. Duis tempus
                         eleifend interdum. Aliquam aliquam
                         luctus commodo. Donec tempor vel nunc
                         at malesuada. Suspendisse potenti. </p>
-
                 </div>
                 <div class="news__item">
                     <img src="./img/news/news1.2or2.5.png" alt="">
-                    <h4>News Title</h4>
-                    <p>News</p>
-                    <p>14.05.2020</p>
+                    <a href="./html/news-events-title.html">News Title</a>
+
+                    <p class="special-color">
+                        <span class="material-icons-outlined">
+                            schedule
+                        </span>
+                        <span>News</span>
+                    </p>
+                    <p class="special-color">14.05.2020</p>
                     <p>Praesent quis viverra ligula, vel convallis
                         massa. Mauris eget mi sed nulla laoreet
                         sollicitudin vitae et lacus. Duis tempus
@@ -135,9 +147,14 @@
                 </div>
                 <div class="news__item">
                     <img src="./img/news/news1.3or2.9.png" alt="">
-                    <h4>News Title</h4>
-                    <p>News</p>
-                    <p>14.05.2020</p>
+                    <a href="./html/news-events-title.html">News Title</a>
+                    <p class="special-color">
+                        <span class="material-icons-outlined">
+                            schedule
+                        </span>
+                        <span>News</span>
+                    </p>
+                    <p class="special-color">14.05.2020</p>
                     <p>Praesent quis viverra ligula, vel convallis
                         massa. Mauris eget mi sed nulla laoreet
                         sollicitudin vitae et lacus. Duis tempus
@@ -154,9 +171,7 @@
                 <div class="addres">
                     <h3>ADDRES</h3>
                     <p>Yerevan Nork/Marash 19/2</p>
-
                     <p>+374 55 555 555 | +374 77 777 777</p>
-
                     <p>info@ierc.am</p>
                     <p class="follow__us">FOLLOW US</p>
                     <div class="social-media">
@@ -172,17 +187,14 @@
                         <i>h</i>
                     </div>
                 </div>
-
                 <div class="links">
                     <h3>LINK</h3>
                     <div class="links__item">
                         <a href="">Cross of Armenian Unity</a>
                     </div>
-
                     <div class="links__item">
                         <a href="">Machanents Tourism & art</a>
                     </div>
-
                     <div class="links__item">
                         <a href="">Machanents Tourism & art</a>
                     </div>
@@ -198,7 +210,6 @@
                 </div>
             </div>
             <div class="footer">
-
                 <p>Copyright © 2017 - 2020. All rights reserved.</p>
             </div>
         </div>

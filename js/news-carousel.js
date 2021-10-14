@@ -64,7 +64,7 @@ function moveCarouselRight() {
 }
 function addOrRemoveActiveClass(currentSlide) {
     let coarouselDotArray = carouselDots.children;
- 
+
     for (let i = 0; i < coarouselDotArray.length; i++) {
         if (i + 1 === currentSlide) {
             coarouselDotArray[i].classList.add('news__carousel__dot__active');

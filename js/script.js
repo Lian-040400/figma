@@ -1,6 +1,10 @@
+const mainManu = document.querySelector('.header__manu');
+const mainManuList = document.querySelector('.header__list');
+const openManu = document.querySelector('.open__manu');
+const closeManu = document.querySelector('.close__manu');
 const carouselContentItem = document.querySelector('.partners__cards__item');
 const carouselDots = document.querySelector('.dots');
-const stepToMove = 3;
+const stepToMove = 6;
 const carouselItemCount = 12;
 let carouselLeftValue = 8;//carouselContent position left = 0.5rem = 8px
 const carouselContent = document.querySelector('.partners__cards');
@@ -13,6 +17,16 @@ let widthToMove = elementWidth * stepToMove;
 let noOFSlides = ((totalWidth / widthToMove)).toFixed(0);
 let currentSlide = 1;
 
+openManu.addEventListener('click', show);
+closeManu.addEventListener('click', close);
+function show() {
+    console.log(444);
+    mainManu.classList.add("show");
+    mainManuList.classList.add('show-header-tabs')
+}
+function close() {
+    mainManu.classList.remove("show");
+}
 slider();
 
 function slider() {
@@ -77,4 +91,3 @@ function addOrRemoveActiveClass(currentSlide) {
     }
 }
 
-      

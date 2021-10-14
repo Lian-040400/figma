@@ -15,7 +15,6 @@
                         font-weight: 900;
                         font-size: 60px;
                         line-height: 70px;
-                       
                 }
                 p {
                         font-weight: 300;
@@ -38,10 +37,9 @@
                         align-items: center;
                         justify-content: space-between;
                         margin-top: 20px;
-                        img{
-                                
-                               width: 400px;
-                               height: 400px;
+                        img {
+                                width: 400px;
+                                height: 400px;
                         }
                         .property {
                                 color: #000;
@@ -51,10 +49,10 @@
                         &__item {
                                 display: flex;
                                 align-items: center;
-                                justify-content: space-between  ;
-                                h5{
-                                        margin-bottom: 20px
-                                }                            ;
+                                justify-content: space-between;
+                                h5 {
+                                        margin-bottom: 20px;
+                                }
                         }
                 }
         }
